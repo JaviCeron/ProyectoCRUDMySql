@@ -101,7 +101,6 @@
                     android:layout_marginTop="20dp"
                     android:background="@drawable/btn_bg"
                     android:paddingTop="5dp"
-                    android:onClick="alta"
                     android:drawableTop="@drawable/ic_save_black_24dp"
                     >
                 </Button>
@@ -117,7 +116,6 @@
                     android:layout_marginTop="20dp"
                     android:background="@drawable/btn_bg"
                     android:paddingTop="5dp"
-                    android:onClick="consultaporcodigo"
                     android:drawableTop="@drawable/ic_search"
                     >
                 </Button>
@@ -133,7 +131,6 @@
                     android:layout_marginTop="20dp"
                     android:background="@drawable/btn_bg"
                     android:paddingTop="5dp"
-                    android:onClick="consultapordescripcion"
                     android:drawableTop="@drawable/ic_search"
                     >
                 </Button>
@@ -149,7 +146,6 @@
                     android:layout_marginTop="20dp"
                     android:background="@drawable/btn_bg"
                     android:paddingTop="5dp"
-                    android:onClick="bajaporcodigo"
                     android:drawableTop="@drawable/ic_delete"
                     >
                 </Button>
@@ -165,7 +161,6 @@
                     android:layout_marginTop="20dp"
                     android:background="@drawable/btn_bg"
                     android:paddingTop="5dp"
-                    android:onClick="modificacion"
                     android:drawableTop="@drawable/ic_edit"
                     >
                 </Button>
@@ -180,7 +175,6 @@
                     android:layout_marginTop="20dp"
                     android:background="@drawable/btn_bg"
                     android:paddingTop="5dp"
-                    android:onClick="limpiar"
                     android:layout_marginBottom="20dp"
                     android:drawableTop="@drawable/ic_clear"
                     >
