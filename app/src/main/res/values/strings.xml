@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">AppSqlite</string>
+    <string name="action_settings">Settings</string>
+    <string name="license">
+        Copyright 2019
+    </string>
+</resources>
