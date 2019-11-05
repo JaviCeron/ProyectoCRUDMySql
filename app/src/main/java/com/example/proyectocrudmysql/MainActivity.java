@@ -27,7 +27,7 @@ public class MainActivity extends AppCompatActivity{
 
     private EditText et_codigo, et_descripcion, et_precio;
     private Button btn_guardar, btn_consultaCodigo, btn_consultaDescripcion, btn_eliminar, btn_actualizar;
-
+    Acercade about = new Acercade();
     boolean inputEt=false;
     boolean inputEd=false;
     boolean input1=false;
