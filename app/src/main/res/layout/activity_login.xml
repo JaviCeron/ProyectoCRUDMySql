@@ -4,7 +4,6 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/grad_bg"
     tools:context=".Login">
 
     <RelativeLayout
@@ -47,7 +46,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_below="@+id/tv_login"
-                android:layout_marginTop="20dp"
+                android:layout_marginTop="48dp"
                 android:orientation="vertical">
 
                 <LinearLayout
@@ -62,7 +61,8 @@
                         android:layout_marginTop="20dp"
                         android:paddingLeft="0dp"
                         android:paddingRight="10dp"
-                        android:textColorHint="@color/colorAccent">
+                        android:textColorHint="#fff">
+
                         <EditText
                             android:id="@+id/etEmail"
                             android:layout_width="match_parent"
@@ -71,13 +71,12 @@
                             android:background="@drawable/et_bg"
                             android:drawableStart="@drawable/ic_person"
                             android:drawablePadding="5dp"
-                            android:paddingLeft="15dp"
-                            android:paddingRight="15dp"
                             android:hint="Ingrese su e-mail"
                             android:inputType="textEmailAddress"
-                            android:textColor="@color/colorAccent"
-                            android:textSize="15sp"
-                            />
+                            android:paddingLeft="15dp"
+                            android:paddingRight="15dp"
+                            android:textColor="#fff"
+                            android:textSize="15sp" />
                     </com.google.android.material.textfield.TextInputLayout>
 
                 </LinearLayout>
@@ -92,6 +91,9 @@
                         android:id="@+id/tiClave"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
+                        android:paddingLeft="0dp"
+                        android:paddingRight="10dp"
+                        android:textColorHint="@color/colorAccent"
                         app:counterEnabled="true"
                         app:counterMaxLength="10"
                         app:errorEnabled="true"
@@ -100,11 +102,7 @@
                         app:layout_constraintLeft_toLeftOf="parent"
                         app:layout_constraintRight_toRightOf="parent"
                         app:layout_constraintTop_toTopOf="parent"
-                        app:passwordToggleEnabled="true"
-                        android:paddingLeft="0dp"
-                        android:paddingRight="10dp"
-                        android:textColorHint="@color/colorAccent"
-                        >
+                        app:passwordToggleEnabled="true">
 
                         <EditText
                             android:id="@+id/etClave"
@@ -114,13 +112,14 @@
                             android:background="@drawable/et_bg"
                             android:drawableStart="@drawable/ic_key"
                             android:drawablePadding="5dp"
-                            android:paddingLeft="15dp"
-                            android:paddingRight="15dp"
-                            android:textColor="@color/colorAccent"
-                            android:textSize="15sp"
                             android:hint="Password"
                             android:inputType="textPassword"
-                            android:maxLength="10"/>
+                            android:maxLength="10"
+                            android:paddingLeft="15dp"
+                            android:paddingRight="15dp"
+                            android:textColor="#fff"
+                            android:textColorHint="#fff"
+                            android:textSize="15sp" />
                     </com.google.android.material.textfield.TextInputLayout>
 
                 </LinearLayout>
@@ -138,7 +137,7 @@
                 android:paddingLeft="70dp"
                 android:paddingRight="70dp"
                 android:text="ENTRAR"
-                android:background="@drawable/btn_mov1"
+                android:background="@drawable/btn_bg"
                 android:textAllCaps="false"
                 android:textColor="@color/black"
                 android:textSize="16sp"
