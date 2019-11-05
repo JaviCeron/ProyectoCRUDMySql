@@ -23,6 +23,7 @@
             </intent-filter>
         </activity>
         <activity android:name=".Consulta_RecyclerView"></activity>
+        <activity android:name=".Acercade"></activity>
     </application>
 
 </manifest>

@@ -335,6 +335,8 @@ public class MainActivity extends AppCompatActivity{
         }else if(id == R.id.action_salir){
             DialogConfirmacion();
             return true;
+        }else if (id==R.id.acercade){
+            about.acercade(MainActivity.this);
         }
 
         return super.onOptionsItemSelected(item);
