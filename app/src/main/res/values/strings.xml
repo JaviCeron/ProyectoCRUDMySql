@@ -6,7 +6,9 @@
     <string name="listarticulos">Lista Spinner</string>
     <string name="listarticulos1">Lista ListView</string>
 
-
+    <string name="license">
+        Copyright 2019
+    </string>
     <string name="salir">Salir</string>
     <string name="usuario"><u>Registrarme ahora</u></string>
     <string name="pass"><u>¿Se te olvidó tu contraseña?</u></string>

@@ -116,6 +116,7 @@
                     android:layout_marginTop="20dp"
                     android:background="@drawable/btn_bg"
                     android:paddingTop="5dp"
+
                     android:drawableTop="@drawable/ic_search"
                     >
                 </Button>
@@ -131,6 +132,7 @@
                     android:layout_marginTop="20dp"
                     android:background="@drawable/btn_bg"
                     android:paddingTop="5dp"
+
                     android:drawableTop="@drawable/ic_search"
                     >
                 </Button>
@@ -162,21 +164,6 @@
                     android:background="@drawable/btn_bg"
                     android:paddingTop="5dp"
                     android:drawableTop="@drawable/ic_edit"
-                    >
-                </Button>
-                <Button
-                    android:id="@+id/btnNuevo"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:textColor="@color/white"
-                    android:textSize="20dp"
-                    android:text="Limpiar"
-                    android:textAllCaps="false"
-                    android:layout_marginTop="20dp"
-                    android:background="@drawable/btn_bg"
-                    android:paddingTop="5dp"
-                    android:layout_marginBottom="20dp"
-                    android:drawableTop="@drawable/ic_clear"
                     >
                 </Button>
             </LinearLayout>

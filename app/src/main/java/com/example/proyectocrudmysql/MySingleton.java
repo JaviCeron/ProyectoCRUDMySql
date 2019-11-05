@@ -2,15 +2,19 @@ package com.example.proyectocrudmysql;
 
 import android.content.Context;
 import android.graphics.Bitmap;
-import android.util.LruCache;
+
+import androidx.collection.LruCache;
 
 import com.android.volley.Request;
 import com.android.volley.RequestQueue;
 import com.android.volley.toolbox.ImageLoader;
 import com.android.volley.toolbox.Volley;
 
-public class MySingleton {
+//import android.util.LruCache;
+//import android.support.v4.util.LruCache;
+//import android.support.v4.util.LruCache;
 
+public class MySingleton {
     private static MySingleton mInstance;
     private RequestQueue mRequestQueue;
     private ImageLoader mImageLoader;
@@ -60,5 +64,5 @@ public class MySingleton {
         return mImageLoader;
     }
 
-
 }
+

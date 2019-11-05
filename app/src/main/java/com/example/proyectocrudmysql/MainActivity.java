@@ -14,16 +14,16 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
 
 import android.view.KeyEvent;
-import android.view.View;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
 import android.view.WindowManager;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
 
-public class MainActivity extends AppCompatActivity {
+public class MainActivity extends AppCompatActivity{
 
     private EditText et_codigo, et_descripcion, et_precio;
     private Button btn_guardar, btn_consultaCodigo, btn_consultaDescripcion, btn_eliminar, btn_actualizar;
@@ -73,9 +73,17 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+        Toolbar toolbar = findViewById(R.id.toolbar);
+        toolbar.setNavigationIcon(getResources().getDrawable(R.drawable.ic_back));
+        toolbar.setTitleTextColor(getResources().getColor(R.color.mycolor1));
+        toolbar.setTitleMargin(0, 0, 0, 0);
+        toolbar.setSubtitle("CRUD MySQL~2019");
+        toolbar.setSubtitleTextColor(getResources().getColor(R.color.white));
+        toolbar.setTitle("Javi Cerón");
+        setSupportActionBar(toolbar);
 
         ///y esto para pantalla completa (oculta incluso la barra de estado)
-      //  getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);
+        getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);
 
         et_codigo = (EditText) findViewById(R.id.et_codigo);
         et_descripcion = (EditText) findViewById(R.id.et_descripcion);
@@ -88,16 +96,16 @@ public class MainActivity extends AppCompatActivity {
         //tv_resultado = (TextView) findViewById(R.id.tv_resultado);
 
 
-       /* toolbar.setNavigationOnClickListener(new View.OnClickListener() {
+        toolbar.setNavigationOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 DialogConfirmacion();
             }
-        });*/
+        });
 
 
         /******************************************************************/
-        //BLOQUE DE CÓDIGO PARA MOSTRAR DATOS DE LA BUSQUEDA//
+             //BLOQUE DE CÓDIGO PARA MOSTRAR DATOS DE LA BUSQUEDA//
         try {
             Intent intent = getIntent();
             Bundle bundle = intent.getExtras();
@@ -415,4 +423,7 @@ public class MainActivity extends AppCompatActivity {
         String precio = preferences.getString("precio","0.0");
         return precio;   //return preferences.getString("tiempo", "Sin configurar.");
     }
+
+
+
 }
